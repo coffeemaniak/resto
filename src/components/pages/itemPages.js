@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import WithRestoService from "../hoc";
 import {menuLoaded, menuRequested, menuError} from "../../actions";
 
-import "./itemPages.scss";
+import "./itemPages.css";
 
 class ItemPages extends Component {
     componentDidMount() {
@@ -22,7 +22,7 @@ class ItemPages extends Component {
         const {title, url, price, category} = item;
         return (
             <div className = "item_page">
-                <div className="menu__item item_block">
+                <div className="item_block">
                      <div className="menu__title">{title}</div>
                     <img className="menu__img" src={url} alt={title}></img>
                     <div className="menu__category">Category: <span>{category}</span></div>

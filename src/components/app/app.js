@@ -11,8 +11,8 @@ const App = () => {
                 <Switch>
                     <Route path="/" component={MainPage} exact/>
                     <Route path="/cartpage" component={CartPage}/>
-                    <Route exact component={MainPage}/>
-                    <Route path = '/:id' component ={ItemPages}/>
+                    {/* <Route exact component={MainPage}/> */}
+                    <Route path="/:id" component={ItemPages}/>
                 </Switch>
             </div>
     )
