@@ -32,8 +32,8 @@ const mapStateToProps = ({items}) => {
     }
 }
 
-const mapDispatchToProps = () => {
-    
-}
+// const mapDispatchToProps = () => {
+
+// }
 
 export default connect(mapStateToProps)(CartTable);

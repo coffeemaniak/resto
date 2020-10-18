@@ -28,6 +28,22 @@ const reducer = (state = initialState, action) => {
             loading: false,
             error: true
         };
+        case "ADD_TO-CART":
+            const id = action.payload;
+            const item = state.menu.find(item => item.id === id);
+            const newItem = {
+                title: item.title,
+                url: item.url,
+                price: item.price,
+                id: item.id
+            };
+            return {
+                ...state,
+                items: [
+                    ...state.items,
+                    newItem
+                ]
+            };
         default: 
             return state
     }
