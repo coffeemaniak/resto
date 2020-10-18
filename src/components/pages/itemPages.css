@@ -15,3 +15,33 @@
 .menu__item{
     position: relative;
 }
+
+.item__category,
+.item__title,
+.item__price {
+    color: white;
+}
+
+.item__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item__price,
+.item__category {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.item__category span,
+.item__price span {
+    font-weight: 700;
+}
+
+.item__btn {
+    margin-left: 30px;
+}

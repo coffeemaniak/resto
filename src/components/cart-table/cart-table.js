@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
 import './cart-table.scss';
+import {deleteFromCart} from "../../actions";
 
 const CartTable = ({items, deleteFromCart}) => {
     return (
@@ -32,8 +33,8 @@ const mapStateToProps = ({items}) => {
     }
 }
 
-// const mapDispatchToProps = () => {
+const mapDispatchToProps =  {
+    deleteFromCart
+}
 
-// }
-
-export default connect(mapStateToProps)(CartTable);
+export default connect(mapStateToProps, mapDispatchToProps)(CartTable);

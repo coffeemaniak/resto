@@ -23,11 +23,11 @@ class ItemPages extends Component {
         return (
             <div className = "item_page">
                 <div className="item_block">
-                     <div className="menu__title">{title}</div>
+                     <div className="item__title">{title}</div>
                     <img className="menu__img" src={url} alt={title}></img>
-                    <div className="menu__category">Category: <span>{category}</span></div>
-                    <div className="menu__price">Price: <span>{price}$</span></div>
-                    <button className="menu__btn">Add to cart</button>
+                    <div className="item__category">Category: <span>{category}</span></div>
+                    <div className="item__price">Price: <span>{price}$</span></div>
+                    <button className="menu__btn item__btn">Add to cart</button>
                     {/* <span className = {`menu__category_Img ${category}`}></span>  */}
                 </div>
             </div>

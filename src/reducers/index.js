@@ -44,6 +44,16 @@ const reducer = (state = initialState, action) => {
                     newItem
                 ]
             };
+        case "DELETE_FROM_CART":
+            const indx = action.payload;
+            const itemIndex = state.items.findIndex(item => item.id === indx);
+            return {
+                ...state,
+                items: [
+                    ...state.items.slice(0, itemIndex),
+                    ...state.items.slice(itemIndex + 1)
+                ]
+            };
         default: 
             return state
     }
