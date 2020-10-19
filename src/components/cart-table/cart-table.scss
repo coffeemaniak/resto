@@ -32,6 +32,25 @@
             width: 250px;
             object-fit: cover;
         }
+
+        &-plus, &-minus {
+            width: 25px;
+            height: 25px;
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 5px;
+        }
+        &-minus {
+            margin-right: 30px;
+            font-weight: 600;
+            padding-left: 8px;
+        }
+        &-counter {
+            color: #fff;
+            font-size: 24px;
+        }
     }
     &__close {
         position: absolute;

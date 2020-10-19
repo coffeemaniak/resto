@@ -2,7 +2,8 @@ const initialState = {
     menu: [],
     loading: true,
     error: false, 
-    items: []
+    items: [],
+    counter: 1
 }
 
 const reducer = (state = initialState, action) => {
@@ -53,6 +54,16 @@ const reducer = (state = initialState, action) => {
                     ...state.items.slice(0, itemIndex),
                     ...state.items.slice(itemIndex + 1)
                 ]
+            };
+        case "ADD_MORE":
+            return {
+                ...state,
+                counter: state.counter + 1
+            };
+        case "REMOVE_MORE":
+            return {
+                ...state,
+                counter: state.counter - 1
             };
         default: 
             return state

@@ -31,10 +31,26 @@ const deleteFromCart = (id) => {
     }
 }
 
+const addMore = (id) => {
+    return {
+        type: "ADD_MORE",
+        payload: id
+    }
+}
+
+const removeMore = (id) => {
+    return {
+        type: "REMOVE_MORE",
+        payload: id
+    }
+}
+
 export {
     menuLoaded,
     menuRequested,
     menuError,
     addedToCart,
-    deleteFromCart
+    deleteFromCart,
+    addMore,
+    removeMore
 };
