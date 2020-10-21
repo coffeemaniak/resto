@@ -31,12 +31,12 @@ const deleteFromCart = (id) => {
     }
 }
 
-const addMore = (id) => {
-    return {
-        type: "ADD_MORE",
-        payload: id
-    }
-}
+// const addMore = (id) => {
+//     return {
+//         type: "ADD_MORE",
+//         payload: id
+//     }
+// }
 
 const removeMore = (id) => {
     return {
@@ -51,6 +51,5 @@ export {
     menuError,
     addedToCart,
     deleteFromCart,
-    addMore,
     removeMore
 };
